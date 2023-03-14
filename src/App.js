@@ -8,6 +8,7 @@ import FAQ from "./Component/pages/FAQ";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import SingUp from "./Component/Authentication/SingUp";
 import LogIn from "./Component/Authentication/LogIn";
+import PageNotfound from "./Component/pages/PageNotfound";
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<Abouts/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/user" element={<SingUp/>}/>
+          <Route path="*" element={<PageNotfound/>}/>
         </Routes>
       </BrowserRouter>
     </div>
